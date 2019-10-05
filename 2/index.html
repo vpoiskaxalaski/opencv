@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>lab2</title>
+        <style>
+            .container{
+                display: flex;
+            }
+        </style>
+    </head>
+<body>
+<div>
+    <img id='srcImage' src="/2/Без названия.png" height="200px"></img>
+</div>
+<div class="container">
+    <div>
+        <h3>Свёртка</h3>
+        <canvas id='smoothing'></canvas>
+    </div>
+    <div>
+        <h3>Эррозия</h3>
+        <canvas id='erode'></canvas>
+    </div>
+    <div>
+        <h3>Дилатация</h3>
+        <canvas id='dilate'></canvas>
+    </div>
+    <div>
+        <h3>Детектор ребер Канни</h3>
+        <canvas id="canny"></canvas>
+    </div>
+    <div>
+        <h3>Выравнивание гистограммы</h3>
+        <canvas id="hist"></canvas>
+    </div>
+</div>
+<h3>Сглаживание</h3>
+<div class="container">
+    <div>
+        <canvas id='blur'></canvas>
+        <h4>blur</h4>
+    </div> 
+    <div>
+        <canvas id='boxFilter'></canvas>
+        <h4>boxFilter</h4>
+    </div>
+    <div>
+        <canvas id='GaussianBlur'></canvas>
+        <h4>GaussianBlur</h4>
+    </div> 
+    <div>
+        <canvas id='medianBlur'></canvas>
+        <h4>medianBlur</h4>
+    </div>     
+</div>
+<script src="https://huningxin.github.io/opencv.js/build/asm.js/opencv.js"></script>
+<script src="/2/script.js"></script>
+</body>
+</html>
